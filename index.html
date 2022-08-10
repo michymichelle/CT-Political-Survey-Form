@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <h1 id="title">CT Political Survey Form</h1>
+	  <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <p id="description">Responses to this survey will be collected to evaluate public opinion of students from ages 13 to 18 in Connecticut on current political stances.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Full Name: <input id="name" type="text" placeholder="Michelle Zheng" required></label>
+        <label id="email-label">Email: <input id="email" type="email" placeholder="michelle.zheng@yale.edu" required></label>
+        <label id="number-label">Age: <input id="number" type="number" min="13" max="18" placeholder="18" required></label>
+      </fieldset>
+      <fieldset>
+        <label>Which political party do you follow?
+          <label><input type="radio" name="political-party" value="1" class="inline">Democratic Party</label>
+          <label><input type="radio" name="political-party" value="2" class="inline">Republican Party</label>
+          <label><input type="radio" name="political-party" value="3" class="inline">Libertarian Party</label>
+          <label><input type="radio" name="political-party" value="4" class="inline">Other</label>
+          <label><input type="radio" name="political-party" value="5" class="inline">None</label>
+			  </label>
+      </fieldset>
+      <fieldset>
+        <label>Which of these people do you look favorably upon?
+          <label><input type="checkbox" name="people" value="1" class="inline" required>Donald Trump</label>
+          <label><input type="checkbox" name="people" value="2" class="inline" required>Joe Biden</label>
+          <label><input type="checkbox" name="people" value="3" class="inline" required>Barack Obama</label>
+          <label><input type="checkbox" name="people" value="4" class="inline" required>Bernie Sanders</label>
+          <label><input type="checkbox" name="people" value="5" class="inline" required>Ted Cruz</label>
+          <label><input type="checkbox" name="people" value="6" class="inline" required>Mitch McConnell</label>
+      </fieldset>
+      <fieldset>
+        <label>Which of these issues do you feel is the most important and deserves more attention?
+        <select id="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Fight for abortion rights</option>
+          <option value="2">Fight against abortion rights</option>
+          <option value="3">Preventing school shootings through reduction of firearm sales</option>
+          <option value="4">Protection of/under the second amendment</option>
+          <option value="5">Addressing climate change</option>
+          <option value="6">Protection of privacy rights</option>
+          <option value="7">Racial sensitivity training and education</option>
+        </select>
+        </label>
+      </fieldset>
+      <label>Leave your best method of contact below for a chance to win a $1 giveaway:
+          <textarea name="contact" rows="2" cols="40" placeholder="I would like to be contacted via my phone number: XXX-XXX-XXXX..."></textarea>
+			</label>
+      <fieldset>
+      <input id="submit" type="submit" value="Submit">
+      </fieldset>
+
+    </form>
+
+  </body>
